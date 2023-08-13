@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fontsource/ubuntu": "^5.0.8",
+    "normalize.css": "^8.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },
