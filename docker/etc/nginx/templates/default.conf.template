@@ -3,10 +3,11 @@ server {
     listen  [::]:80;
 
     server_name ket4up.ru frontend web localhost;
+    
+    root   /usr/share/nginx/html;
+    index  index.html index.htm;
 
-    location / {
-        root   /usr/share/nginx/html;
-        index  index.html index.htm;
+    location ^/ {
         try_files $uri $uri/ /index.html;
     }
 
