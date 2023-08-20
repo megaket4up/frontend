@@ -12,4 +12,5 @@ COPY ./docker /
 COPY --from=buildstage /opt/app/dist /usr/share/nginx/html
 
 EXPOSE 80
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+
+CMD ["/docker-entrypoint.sh", "nginx", "-g", "daemon off;"]
